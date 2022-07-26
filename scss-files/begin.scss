@@ -1,0 +1,130 @@
+@use './variables' as *;
+
+.main-btn{
+    background-color: $light-primary-color;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: $font-medium-2 !important;
+    min-height: 40px !important;
+}
+.secondary--btn{
+    font-size: $font-medium-2 !important;
+    border-radius: 5px;
+    border: 1px solid;
+    min-width: 40px;
+    min-height: 40px;
+}
+// header part
+header ul.nav{
+    .nav--dark-icon{
+        font-size: 1.1rem;
+    }
+    .nav--light-icon{
+        @extend .nav--dark-icon;
+    }
+    .nav--lang img{
+        width: 18px;
+        height: 18px;
+    }
+    .nav--join-btn{
+        font-size: $font-medium
+    }
+}
+
+// filter part
+
+.filter{
+    .filter--floor-btn{
+        background-color: $light-primary-color-light !important;
+        color: $light-primary-color !important;
+        border-radius: 5px;
+        min-height: 40px;
+        font-size: $font-medium-2;
+    }
+    .filter--sort-label{
+        font-size: $font-medium-2;
+        padding-left: 10px !important
+    }
+    .filter--sort-btn{
+        @extend .filter--sort-label;
+    }
+}
+
+// houses part
+
+.house{
+    .house--container{
+        gap: 17px;
+        @media screen and ($max) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media screen and ($min--mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and ($min--desk) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .house--for-you{
+        top: 10px;
+        right: 10px;
+        background-color: $light-secondary-color;
+        color: #fff;
+        font-size: $font-small;
+        padding: 5px .8rem;
+        border-radius: 5px;
+    }
+    .house--location{
+        font-size: $font-medium-2
+    }
+    .house--stats-icon{
+        font-size: $font-large;
+    }
+    .house--stats{
+        font-size: $font-medium;
+    }
+    .house--price{
+        color: $light-primary-color;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .house--img img{
+        min-height: 220px !important;
+        max-height: 220px !important;
+        object-fit: cover !important;
+        width: 100% !important;
+    }
+}
+
+// light theme
+.light--theme{
+    background-color: $light-body-bg !important;
+    .p-50{
+        color: $light-grey-color !important;
+    }
+    .p-100{
+        color: $light-black-color !important;
+    }
+    .heading{
+        @extend .p-100;
+    }
+    .border{
+        border-color: #e5e5e5 !important;
+    }
+}
+
+.dark--theme{
+    background-color: $dark-body-bg !important;
+    .p-50{
+        color: $dark-grey-color !important;
+    }
+    .p-100{
+        color: $dark-white-color !important;
+    }
+    .heading{
+        @extend .p-100;
+    }
+    .border{
+        border-color: #393939 !important;
+    }
+}

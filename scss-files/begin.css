@@ -1,0 +1,112 @@
+.main-btn {
+  background-color: #3A4EDD;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px !important;
+  min-height: 40px !important;
+}
+
+.secondary--btn {
+  font-size: 15px !important;
+  border-radius: 5px;
+  border: 1px solid;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+header ul.nav .nav--dark-icon, header ul.nav .nav--light-icon {
+  font-size: 1.1rem;
+}
+header ul.nav .nav--lang img {
+  width: 18px;
+  height: 18px;
+}
+header ul.nav .nav--join-btn {
+  font-size: 14px;
+}
+
+.filter .filter--floor-btn {
+  background-color: #EBEDFC !important;
+  color: #3A4EDD !important;
+  border-radius: 5px;
+  min-height: 40px;
+  font-size: 15px;
+}
+.filter .filter--sort-label, .filter .filter--sort-btn {
+  font-size: 15px;
+  padding-left: 10px !important;
+}
+.house .house--container {
+  gap: 17px;
+}
+@media screen and (max-width: 768px) {
+  .house .house--container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .house .house--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .house .house--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.house .house--for-you {
+  top: 10px;
+  right: 10px;
+  background-color: #2FC89A;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 0.8rem;
+  border-radius: 5px;
+}
+.house .house--location {
+  font-size: 15px;
+}
+.house .house--stats-icon {
+  font-size: 17px;
+}
+.house .house--stats {
+  font-size: 14px;
+}
+.house .house--price {
+  color: #3A4EDD;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.house .house--img img {
+  min-height: 220px !important;
+  max-height: 220px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  width: 100% !important;
+}
+
+.light--theme {
+  background-color: #ffffff !important;
+}
+.light--theme .p-50 {
+  color: #777777 !important;
+}
+.light--theme .p-100, .light--theme .heading {
+  color: #24345E !important;
+}
+.light--theme .border {
+  border-color: #e5e5e5 !important;
+}
+
+.dark--theme {
+  background-color: #0d0c22 !important;
+}
+.dark--theme .p-50 {
+  color: #7a7a7a !important;
+}
+.dark--theme .p-100, .dark--theme .heading {
+  color: #fff !important;
+}
+.dark--theme .border {
+  border-color: #393939 !important;
+}/*# sourceMappingURL=begin.css.map */
